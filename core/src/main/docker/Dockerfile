@@ -1,16 +1,6 @@
-# FROM openjdk:17.0.1-jdk
-
-# LABEL maintainer="GuBee"
-# LABEL version="1.0"
-
-# ENV DB_NAME="postgres"
-# ENV DB_HOSTNAME="localhost"
-# ENV DB_PORT="5432"
-# ENV DB_USERNAME="gubee"
-# ENV DB_PWD="gubee"
-
-# EXPOSE 8080
-
-# COPY maven/*.jar interview.jar
-
-ENTRYPOINT [ "java" , "-Xms128m",  "-Xmx400m", "-jar", "-DLog4jContextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector", "interview.jar", "--jdbc.url=jdbc:postgresql://${DB_HOSTNAME}:${DB_PORT}/${DB_NAME}", "--jdbc.password=${DB_PWD}", "--jdbc.username=${DB_USERNAME}"]
+# FROM openjdk
+# RUN mkdir -p ../../target/lesson
+# ENV APP_NAME=pcontroll-0.0.1-SNAPSHOT.jar
+# COPY ${APP_NAME} /app/lesson/
+# EXPOSE 8090
+# ENTRYPOINT ["java", "-jar", "/app/lesson/${APP_NAME}"]
