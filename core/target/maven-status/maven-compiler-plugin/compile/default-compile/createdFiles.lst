@@ -1,0 +1,8 @@
+br\com\gubee\interview\core\features\powerstats\PowerStatsService.class
+br\com\gubee\interview\core\features\powerstats\PowerStatsRepository.class
+br\com\gubee\interview\core\Application.class
+br\com\gubee\interview\core\features\hero\service\HeroService.class
+br\com\gubee\interview\core\features\hero\repository\HeroRepository.class
+br\com\gubee\interview\core\configuration\WebConfiguration.class
+br\com\gubee\interview\core\features\hero\controller\HeroController.class
+br\com\gubee\interview\core\configuration\JdbcConfiguration.class
