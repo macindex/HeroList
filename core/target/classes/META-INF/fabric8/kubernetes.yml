@@ -6,7 +6,7 @@ items:
   kind: Deployment
   metadata:
     annotations:
-      fabric8.io/git-commit: b139d1e2c62ea7acd47e19a32d6a1e4bf8f7ac92
+      fabric8.io/git-commit: 63d2776f4ec9f717e8cc292a3e2593d742584d79
       fabric8.io/iconUrl: img/icons/spring-boot.svg
       fabric8.io/git-branch: main
       fabric8.io/metrics-path: dashboard/file/kubernetes-pods.json/?var-project=interview-core&var-version=1.0.0-SNAPSHOT
@@ -29,7 +29,7 @@ items:
     template:
       metadata:
         annotations:
-          fabric8.io/git-commit: b139d1e2c62ea7acd47e19a32d6a1e4bf8f7ac92
+          fabric8.io/git-commit: 63d2776f4ec9f717e8cc292a3e2593d742584d79
           fabric8.io/metrics-path: dashboard/file/kubernetes-pods.json/?var-project=interview-core&var-version=1.0.0-SNAPSHOT
           fabric8.io/scm-url: https://github.com/spring-projects/spring-boot/interview/interview-core
           fabric8.io/iconUrl: img/icons/spring-boot.svg
